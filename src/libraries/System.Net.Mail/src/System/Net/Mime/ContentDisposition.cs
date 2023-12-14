@@ -278,7 +278,7 @@ namespace System.Net.Mime
 
                 while (MailBnfHelper.SkipCFWS(_disposition, ref offset))
                 {
-                    // ensure that the separator charactor is present
+                    // ensure that the separator character is present
                     if (_disposition[offset++] != ';')
                     {
                         throw new FormatException(SR.Format(SR.MailHeaderFieldInvalidCharacter, _disposition[offset - 1]));
